@@ -70,6 +70,7 @@ def analyze_log(path_to_file):
             response4 = get_days_that_never_went(joao_data, data)
 
             path_to_file = "data/mkt_campaign.txt"
-            write_file(path_to_file, [response1, response2, response3, response4])
+            write_file(path_to_file, [response1,
+                       response2, response3, response4])
         except FileNotFoundError:
             raise FileNotFoundError(f"Arquivo inexistente: '{path_to_file}'")
